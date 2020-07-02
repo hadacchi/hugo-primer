@@ -2,7 +2,8 @@
 <html>
   <head>
     {{ if not .Site.BuildDrafts }}
-    {{ template "_internal/google_analytics_async.html" . }}
+    {{ partial "analytics.html" . }}
+    {{ partial "adsense.html" . }}
     {{ end }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
