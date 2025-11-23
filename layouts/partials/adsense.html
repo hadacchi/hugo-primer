@@ -1,5 +1,6 @@
-{{ if not .Site.IsServer}}
+{{ if not hugo.IsServer}}
 {{ with .Site.Params.GoogleAdsense }}
-<script data-ad-client="{{ . }}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}"
+     crossorigin="anonymous"></script>
 {{ end }}
 {{ end }}

@@ -33,6 +33,9 @@
   </section>
 
   <section>
+      {{ partial "ads/in-article-ad.html" . }}
+  </section>
+  <section>
     {{ if (default true .Params.comments) }}
       {{ template "_internal/disqus.html" . }}
     {{ end }}
